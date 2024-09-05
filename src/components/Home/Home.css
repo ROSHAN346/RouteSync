@@ -1,0 +1,80 @@
+.contentCard{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* opacity: 0.3; */
+  /* background: ; */
+  /* filter: invert(); */
+}
+
+/* .main{
+  background-color: white;z
+  opacity: 0.3;
+} */
+
+.card{
+  display: flexbox;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px ;
+  overflow: hidden;
+  height: 250px;
+  width: 300px;
+  text-align: center;
+  background: beige;
+}
+
+
+.homebody{
+  /* background: rgb(66, 131, 222); */
+  height: 100vh;
+  margin-top: -22px;
+  background-image:  url(5.png) ;
+  background-size: cover; /* or contain */
+  background-position: center;
+  margin-top: 0px;
+  height: 100vh;
+}
+
+/* footer {
+  background: #1e3a8a;
+  color: #fff;
+  text-align: center;
+  padding: 3rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+} */
+
+
+.homecontent {
+  width: 40%;
+  text-align: center;
+  color: white;
+}
+
+.homecontent h1 {
+  font-size: 3rem;
+  text-shadow: 0 0 7px white;
+  margin-right: -20px;
+}
+
+.homecontent p {
+  width: 60%;
+  margin: 20px 20%;
+}
+
+.homesection{
+  display: flex;
+  flex-direction: column;
+}
+
+/* Home.css */
+/* .secondpage {
+  background-image: url('1.png');
+  height: 1000px;
+
+  /* background-size: cover; Make sure the background covers the whole div */
+  /* background-repeat: no-repeat; Prevents the image from repeating */
+  /* height: 100vh;  */
+  /* width: 100%;  */
+

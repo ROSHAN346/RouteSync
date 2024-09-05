@@ -1,0 +1,143 @@
+/* Global Styles */
+.contactbody {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f9fa;
+}
+
+/* Header */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f8f8;
+    padding: 20px 40px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-container {
+    display: flex;
+}
+
+.nav-item {
+    margin-right: 20px;
+    color: #555;
+    text-decoration: none;
+}
+
+.header-right-container {
+    display: flex;
+    align-items: center;
+}
+
+.contact-link {
+    margin-right: 20px;
+    color: #555;
+    text-decoration: none;
+}
+
+.cta-button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero-section-container {
+    text-align: center;
+    padding: 60px 40px;
+    height: 20%;
+    background-color: #eef4fa;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.hero-subtitle {
+    font-size: 18px;
+}
+
+/* Contact Options */
+.contact-options-container {
+    display: flex;
+    justify-content: center;
+    padding: 60px 40px;
+    background-color: #ffffff;
+}
+
+.contact-box {
+    flex: 1;
+    height: 60%;
+    margin: 0 20px;
+    text-align: center;
+    background-color: #f7f9fa;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.contact-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact-description {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.contact-number {
+    display: block;
+    font-size: 20px;
+    color: #00aaff;
+    text-decoration: none;
+}
+
+/* Map Section */
+.map-section-container {
+    background-color: #eef4fa;
+    padding: 40px 0;
+}
+
+.map-container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.map-frame {
+    width: 100%;
+    height: 450px;
+    border: 0;
+    border-radius: 8px;
+}
+
+.contact-info-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contact-info-text {
+    font-size: 16px;
+    margin: 5px 0;
+}

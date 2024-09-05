@@ -1,0 +1,284 @@
+/* Reset some default styles */
+.passbody, h1, h2, p, input, select, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global Styles */
+.passbody {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #c2e9fb 0%, #f5f7fa 100%);
+    color: #333;
+  }
+  
+.tagbus {
+    background: #1e3a8a;
+    color: #fff;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+
+
+
+  
+  .header-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+  }
+  
+  .header-image:hover {
+    transform: scale(1.05);
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 2rem;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 100%;
+    max-width: 1200px; /* Increased max-width for larger screens */
+  }
+  
+  .card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    position: relative;
+    height: 550px;
+    width: 400px;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    transition: opacity 0.3s, transform 0.3s;
+  }
+  
+  .card-image:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  h2 {
+    margin-bottom: 1rem;
+    color: #1e3a8a;
+    font-size: 1.75rem;
+  }
+  
+  label {
+    display: block;
+    margin-top: 0.5rem;
+    font-weight: bold;
+  }
+  
+  input[type="text"], input[type="date"], select {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.25rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  input:focus, select:focus {
+    border-color: #1e3a8a;
+    box-shadow: 0 0 5px rgba(30, 58, 138, 0.3);
+    outline: none;
+  }
+  
+  button {
+    margin-top: 1rem;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    background: #1e3a8a;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  button:hover {
+    background: #1e40af;
+    transform: scale(1.05);
+  }
+  
+  .message {
+    margin-top: 1rem;
+    color: #28a745;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  footer {
+    background: #1e3a8a;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+  
+    .card {
+        padding: 1.5rem;
+    }
+  
+    .header-image {
+        height: 200px;
+        object-fit: cover;
+    }
+  
+    .card-image {
+        height: 150px;
+        object-fit: cover;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .header-image {
+        height: 150px;
+    }
+  
+    .card-image {
+        height: 120px;
+    }
+  
+    button {
+        padding: 0.5rem;
+        font-size: 0.875rem;
+    }
+  }
+
+
+/* second page  */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700;900&display=swap');
+
+/* Slide-in animation for odd-numbered cards (from left) */
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-500px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Slide-in animation for even-numbered cards (from right) */
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(500px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+/* body{
+    font-family: 'Poppin',sans-serif;
+    background-color: rgba(121, 198, 211, 0.555);
+} */
+h1{
+    color: rgb(251, 251, 249);
+}
+.cardworking{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range : entry 0 cover 40%;
+}
+
+/* Apply slide-in animation for odd-numbered cards */
+.cardworking:nth-child(odd) {
+    animation-name: slideInLeft;
+}
+
+/* Apply slide-in animation for even-numbered cards */
+.cardworking:nth-child(even) {
+    animation-name: slideInRight;
+}
+
+/* Container for all cards */
+.viewworking {
+    margin: 10px;
+    /* margin-left: 250px; */
+    justify-content: center;
+    
+}
+
+/* Individual card style */
+.cardworking {
+    width: 600px; height: 400px;
+    margin: 150px 0 200px;
+    background: rgb(7, 113, 219);
+    border-radius: 10px;
+    
+    box-shadow: 0 0 20px 6px rgba(28, 85, 208, 0.2);
+
+    padding: 50px;
+    transition: transform 0.1s ease-in-out;
+    animation-duration: 0.1s;
+    animation-fill-mode: forwards;
+    transition:background 0.6s ;
+    
+}
+.cardworking:hover{
+    background: rgb(248, 248, 248);
+}
+
+/* Title inside the card */
+.titlework {
+    border: solid 0px;
+    padding: 10px;
+    border-radius: 5px;
+    background: rgb(176, 221, 255);
+    font-size: 20px;
+    font-weight: bold;
+    color: #0059b2;
+    transition: background-color 0.8s,color 0.8s ,box-shadow 0.8s;
+}
+.titlework:hover{
+    background-color: #0059b2;
+    color: white;
+    box-shadow: 0 0 20px 6px rgb(3, 164, 196 ,0.6);
+}
+
+/* Paragraph inside the card */
+.contentworking p {
+    font-size: 20px;
+    color: #000000;
+    font-weight: 200;
+}
+  
